@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:adjustViewBounds="true"
+    app:cardBackgroundColor="@color/back_white"
+    app:cardCornerRadius="10dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/writer_img"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground"
+            app:layout_constraintBottom_toTopOf="@id/layout"
+            app:layout_constraintDimensionRatio="16:10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            app:layout_constraintBottom_toTopOf="@id/writer_birthDeath"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/writer_img">
+
+            <TextView
+                android:id="@+id/writer_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/sfpro"
+                android:lines="2"
+                android:text="Darrell\nSteward"
+                android:textColor="@color/title"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.like.LikeButton
+                app:circle_end_color="@color/appColor"
+                app:circle_start_color="@color/appColor"
+                app:dots_primary_color="@color/appColor"
+                app:dots_secondary_color="@color/appColor"
+                app:anim_scale_factor="2"
+                android:id="@+id/writer_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/item_back_favorite"
+                app:like_drawable="@drawable/ic_sharp_bookmark_white"
+                app:unlike_drawable="@drawable/ic_sharp_bookmark_black" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/writer_birthDeath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfpro"
+            android:paddingStart="15dp"
+            android:paddingBottom="15dp"
+            android:text="1923-2019"
+            android:textColor="@color/title"
+            android:textSize="12dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

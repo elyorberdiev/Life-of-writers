@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/card_back2"
+    android:padding="25dp"
+    android:layout_height="match_parent">
+
+<TextView
+    android:textSize="20sp"
+    android:textColor="@color/title"
+    android:text="@string/tilni_tanlang"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:layout_marginTop="10dp"
+        android:id="@+id/radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:buttonTint="@color/appColor"
+            android:id="@+id/radio1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lotincha"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:buttonTint="@color/appColor"
+            android:id="@+id/radio2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Кирилча"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="15sp"
+            android:gravity="end"
+            android:layout_weight="3"
+            android:id="@+id/btn1"
+            android:background="@color/back_white"
+            android:textColor="@color/appColor"
+            android:textAllCaps="false"
+            android:text="@string/bekor_qilish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/btn2"
+            android:background="@color/back_white"
+            android:textColor="@color/appColor"
+            android:textAllCaps="false"
+            android:text="@string/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

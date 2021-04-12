@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HomeFragment">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/home_view_pager"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation_view_linear"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+        android:id="@+id/bottom_navigation_view_linear"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/card_back_bubble"
+        android:elevation="18dp"
+        android:orientation="horizontal"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:layout_weight="1"
+            android:id="@+id/l_item_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_colorActive="@color/teal_200"
+            app:bt_shape="@drawable/my_shape"
+            app:bt_colorInactive="@color/white_inactive"
+            app:bt_icon="@drawable/ic_home_icon"
+            app:bt_title="@string/home" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:layout_weight="1"
+            android:id="@+id/l_item_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_badgeBackgroundColor="@color/appColor"
+            app:bt_colorActive="@color/teal_200"
+            app:bt_shape="@drawable/my_shape"
+            app:bt_colorInactive="@color/white_inactive"
+            app:bt_icon="@drawable/ic_favorite_icon"
+            app:bt_title="@string/favorite" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:layout_weight="1"
+            app:bt_shape="@drawable/my_shape"
+            android:id="@+id/l_item_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_colorActive="@color/teal_200"
+            app:bt_colorInactive="@color/white_inactive"
+            app:bt_icon="@drawable/ic_setting_icon"
+            app:bt_title="@string/settings" />
+
+    </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "546716718431",
+    "firebase_url": "https://adiblar-hayoti-2a551.firebaseio.com",
+    "project_id": "adiblar-hayoti-2a551",
+    "storage_bucket": "adiblar-hayoti-2a551.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546716718431:android:f712f415515a9b2e5392ea",
+        "android_client_info": {
+          "package_name": "com.example.adiblarhayoti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "546716718431-ln644nas9vtb7gn817rgo2foifmtpn2g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDae948zoSUwgB8Ve9ooN19Tl5jjSpwpZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "546716718431-ln644nas9vtb7gn817rgo2foifmtpn2g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/card_back2"
+    android:layout_margin="20dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:text="Biz haqimizda"
+        android:textColor="@color/title"
+        android:gravity="start|center"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <TextView
+        android:textColor="@color/title"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:text="O'zbek va Jahon adabiyoti ixlosmandlari uchun ajoyib qo'llanma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="@color/title"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:text="Version 1.0.1\nCompany: Mobiler\nMail: talk0248@gmail.com\nPhone: +998 90 901 32 85"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

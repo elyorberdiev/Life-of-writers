@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Adiblar hayoti</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="action_settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home" >Adiblar</string>
+    <string name="favorite">Saqlangan</string>
+    <string name="settings">Sozlamalar</string>
+    <string name="saqlangan_nadiblar">Saqlangan\nadiblar</string>
+    <string name="sozlamalar">Sozlamalar</string>
+    <string name="kunduzgi_rejim">Kunduzgi rejim</string>
+    <string name="dastur_tili">Dastur tili</string>
+    <string name="lotin">Lotin</string>
+    <string name="ulashish">Ulashish</string>
+    <string name="dastur_haqida">Dastur haqida</string>
+    <string name="tilni_tanlang">Tilni tanlang</string>
+    <string name="bekor_qilish">Bekor qilish</string>
+    <string name="ok">Ok</string>
+    <string name="adiblar_n_hayoti_va_ijodi">Adiblar\nhayoti va ijodi</string>
+    <string name="qidirish">Qidirish</string>
+</resources>
